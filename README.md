@@ -21,6 +21,8 @@ Use [Chef](https://www.chef.io/) and [kubeadm](https://kubernetes.io/docs/setup/
 3. Install [Knife Solo](http://matschaffer.github.io/knife-solo/) so you can use Chef without
   having to setup a Chef server
     ```bash
+    $ sudo apt-get install ruby2.4 ruby2.4-dev
+    $ apt-get install libtool
     $ gem install knife-solo
     ```
 4. Open "k8s cookbooks data bag secret" from 1password and copy the password to your clipboard.
