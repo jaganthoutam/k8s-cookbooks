@@ -25,6 +25,11 @@ Use [Chef](https://www.chef.io/) and [kubeadm](https://kubernetes.io/docs/setup/
     $ apt-get install libtool
     $ gem install knife-solo
     ```
+    if didnt work 
+    ```bash
+    $ curl -L https://www.opscode.com/chef/install.sh | sudo bash
+    $ sudo /opt/chef/embedded/bin/gem i knife-solo
+    ```bash 
 4. Open "k8s cookbooks data bag secret" from 1password and copy the password to your clipboard.
 5. Write the data bag secret key to disk so you can access encrypted secrets
    ```bash
