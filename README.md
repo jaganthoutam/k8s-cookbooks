@@ -24,6 +24,7 @@ Use [Chef](https://www.chef.io/) and [kubeadm](https://kubernetes.io/docs/setup/
     apt-get install gnupg2
     gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     \curl -L https://get.rvm.io | bash -s stable --ruby
+    source /usr/local/rvm/scripts/rvm
     rvm install "ruby-2.3.1"
     gem install chef
     gem install knife-solo
