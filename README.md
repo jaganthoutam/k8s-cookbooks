@@ -29,6 +29,7 @@ Use [Chef](https://www.chef.io/) and [kubeadm](https://kubernetes.io/docs/setup/
     gem install chef
     gem install knife-solo
     gem install librarian-chef
+    gem install berkshelf
     knife solo init .
     ``` 
 4. Open "k8s cookbooks data bag secret" from 1password and copy the password to your clipboard.
