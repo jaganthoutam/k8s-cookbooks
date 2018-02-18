@@ -21,14 +21,13 @@ Use [Chef](https://www.chef.io/) and [kubeadm](https://kubernetes.io/docs/setup/
 3. Install [Knife Solo](http://matschaffer.github.io/knife-solo/) so you can use Chef without
   having to setup a Chef server
     ```bash
-    $ sudo apt-get install ruby2.4 ruby2.4-dev
-    $ apt-get install libtool
-    $ gem install knife-solo
-    ```
-    if didnt work 
-    ```bash
-    $ curl -L https://www.opscode.com/chef/install.sh | sudo bash
-    $ sudo /opt/chef/embedded/bin/gem i knife-solo
+    apt-get install gnupg2
+    \curl -L https://get.rvm.io | bash -s stable --ruby
+    rvm install "ruby-2.3.1"
+    gem install chef
+    gem install knife-solo
+    gem install librarian-chef
+    knife solo init .
     ``` 
 4. Open "k8s cookbooks data bag secret" from 1password and copy the password to your clipboard.
 5. Write the data bag secret key to disk so you can access encrypted secrets
